@@ -6,48 +6,88 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/editTextNumber"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:digits="0123456789ABCDEF"
-            android:text="0"
-            android:inputType="text"
-            android:hint="Enter number"
-            android:textSize="100sp" />
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <Spinner
-            android:id="@+id/spinnerFrom"
-            android:layout_width="69dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp" />
+            <!-- Лейбл для ввода числа -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Введите число"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/textViewResult"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text=""
-            android:textSize="100sp"/>
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789ABCDEF"
+                android:hint="Введите число"
+                android:inputType="text"
+                android:text="0"
+                android:textSize="50sp"
+                android:layout_marginBottom="16dp" />
 
-        <Spinner
-            android:id="@+id/spinnerTo"
-            android:layout_width="69dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp" />
+            <!-- Лейбл для выбора основания исходной системы счисления -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Из системы счисления"
+                android:layout_marginBottom="8dp" />
 
-        <Button
-            android:id="@+id/buttonConvert"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Convert" />
-    </LinearLayout>
+            <Spinner
+                android:id="@+id/spinnerFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Лейбл для результата -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Результат"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="50sp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Лейбл для выбора основания целевой системы счисления -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="В систему счисления"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/buttonConvert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Конвертировать"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/buttonHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="История"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

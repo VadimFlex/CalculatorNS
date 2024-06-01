@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Лейбл для ввода данных -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ввод" />
+
+    <!-- Ввод данных -->
+    <TextView
+        android:id="@+id/textViewInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input" />
+
+    <!-- Лейбл для основания начальной системы счисления -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Из системы счисления" />
+
+    <!-- Основание начальной системы счисления -->
+    <TextView
+        android:id="@+id/textViewFromBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Base" />
+
+    <!-- Лейбл для результата -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Результат" />
+
+    <!-- Результат -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result" />
+
+    <!-- Лейбл для основания целевой системы счисления -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В систему счисления" />
+
+    <!-- Основание целевой системы счисления -->
+    <TextView
+        android:id="@+id/textViewToBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Base" />
+</LinearLayout>
